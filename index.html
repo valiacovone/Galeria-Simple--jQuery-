@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1 class="titulo">soy un titulo</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui offi</p>
+	<a href="http://www.google.com" id="enlace">Soy un link</a>
+
+	<nav>
+		<ul>
+			<li>
+				<a href="index.html">Index</a>
+			</li>
+			<li>
+				<a href="index.html">Index</a>
+			</li>
+			<li>
+				<a href="index.html">Index</a>
+			</li>
+		</ul>
+	</nav>
+
+</body>
+
+<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript">
+$(document).on("ready",function(){
+	var parraf=$("p");
+	var enlace=$("#enlace");
+	var titulo=$(".titulo");
+	var linkMenu=$("nav#menu ul li a:odd")
+	var primerLink=$("#menu ul li a:odd")
+
+
+	if(titulo.length){
+		alert("hay titulo")
+	}
+
+	// EFINAMIENTO DE BUSQUEDA
+
+	$("nav ul li").has("a");
+		$("h1").not(".titulo");
+		//$("h1").current(".titulo"); //trae todos h1 y selecciona solo el que tiene la clase titulo
+
+		$("nav ul li ").first()
+
+		$("nav ul li").eq(2)
+
+		$(".container").find("h3").eq(1)
+
+		// alert($(".titulo").html());
+
+		$(".titulo").html("Soy el nuevo titulo") //setter y getter
+		// titulo.html("Soy el nuevo titulo")
+
+
+})
+
+</script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		.cuadrado{
+			width: 100px;
+			height: 100px;
+			background: red;
+		}
+
+		.destacado {
+			background: yellow;
+		}
+
+	</style>
+</head>
+<body>
+	<h1>Soy un titulo</h1>
+	<button id="bigger">+</button> <button id="smaller">-</button>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	</p>
+	</hr>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat.
+	</p>
+
+	<a href="http://www.google.com" id="buscador" target="_blank">Google</a>
+
+	<div class="cuadrado">
+	</div>
+
+
+	<input type="text" placeholder="Tu nombre" id="nombre"></input>
+	<button id="saludo">Saludar</button>
+
+
+</body>
+
+<script type="text/javascript" src="jquery-1.12.0.min.js"></script>
+
+<script type="text/javascript">
+	$(document).on("ready",function(){
+		/*$("#saludo").on("click",function(){
+			alert("Hola campeon")
+
+		}) 
+
+	$("#saludo").on("click",function(){
+		nombre=$("#nombre").val();
+		
+	})
+
+	/* alert($("h1").css("fontSize"));
+	$("h1").css("fontSize","+=2px");*/
+
+	/* $("#bigger").on("click",function(){
+		$("p").css("fontSize","+=4px");
+	})
+
+	$("#smaller").on("click",function(){
+		$("p").css("fontSize","-=4px");
+	
+	}) */
+
+	var cuadrado=$(".cuadrado")
+
+	alert($(".cuadrado").width())
+	alert($(".cuadrado").height())
+/*
+
+	$(".cuadrado").width("200px")
+	$(".cuadrado").height("30px")
+
+	cuadrado.css("background","blue")
+*/
+
+// JSON
+
+$(".cuadrado").css({
+	"background":"blue",
+	"width":"55px",
+	"height":"80px",
+})
+
+alert($("#buscador").attr("href"))
+
+$("#buscador").attr("href","http://www.reddit.com")
+
+/* JSON DE LO DE ARRIBA
+$("#buscador").attr({
+	"name":"link",
+	"class":"enlace",
+
+}) 
+
+	$("h1").addClass("destacado")
+	alert("freno")
+
+	$("h1").removeClass("destacado") */
+
+
+	$("h1").on("click",function(){
+		$("h1").toggleClass("destacado");
+	})
+
+})
+
+</script>
+</html>
